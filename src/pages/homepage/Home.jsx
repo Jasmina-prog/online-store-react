@@ -16,12 +16,12 @@ function Home(){
         getData()
     }, [])
 
-    const handleDetail = () =>{
-        
+    
+    const handleDetail = () =>{    
         navigate('/details')
-        
-        console.log('working');
     }
+
+
     return(
         <>
         <Navbar />
