@@ -1,7 +1,7 @@
 import "./Button.scss"
 function Button (props){
     return(
-        <button>{props.name}</button>
+        <button onClick={props.detailFn}>{props.name}</button>
     )
 }
 
