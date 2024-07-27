@@ -17,16 +17,15 @@ function Home(){
     }, [])
 
     
-    const handleDetail = () =>{    
-        navigate('/details')
-    }
-
-
     return(
         <>
         <Navbar />
         {
-           data.map((el, key)=>{
+            
+            data.map((el, key)=>{
+               const handleDetail = () =>{
+                   navigate(`/${el?.id}`) 
+               }
             return(
                 <div className="card" key={key}>
                     <img src={el.image} alt="" width="100%" height="280px"/>
@@ -34,7 +33,6 @@ function Home(){
                     <h2>{el.title}</h2>
                     <div className="btns">
                         <Button name={el.price + ` $`}/>
-                        {/* <Button name={el.category}/> */}
                         <Button name="Buy" detailFn={handleDetail}/>
                     </div>
 

@@ -1,0 +1,19 @@
+.detail{
+    background-color: rgba(0, 0, 0, 0.461);
+    color: white;
+    margin: 40px;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    .desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 10px;
+    }
+}
